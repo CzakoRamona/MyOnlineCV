@@ -9,6 +9,7 @@ class Home extends Component {
                         <img
                             src="me.jpg"
                             alt="me"
+                            className="me-image"
                         />
                     </Cell>
                 </Grid>
