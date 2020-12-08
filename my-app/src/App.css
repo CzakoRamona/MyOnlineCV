@@ -59,18 +59,42 @@
   font-weight: bold;
   color: rgb(42, 16, 85);
 }
+#button-hire {
+  background-color: rgb(90, 5, 64);
+  color: rgb(248, 163, 163);
+}
 /* contact page */
-.contact-font-glow-container {
-  margin-top: 10px;
+.contact-container {
+  max-width: auto;
+  background: #fd4472; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #00223e,
+    #fd4472
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00223e,
+    #fd4472
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.contact-form {
+  max-width: auto;
+}
+/* contact style */
+.contact-font-glow {
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
 }
-.ul {
+.glow-container {
   display: flex;
 }
-.li {
+
+.glow-container a {
   position: relative;
   display: block;
   color: #666;
@@ -84,11 +108,12 @@
   cursor: pointer;
   transition: 0.5s;
 }
-.ul.li:before {
+.glow-container a:before {
   position: absolute;
   content: "";
+  /* background: #d35400; */
   top: 0;
-  left: 0;
+  right: 0;
   height: inherit;
   width: inherit;
   border-radius: 50%;
@@ -96,73 +121,73 @@
   z-index: -1;
   transition: 0.5s;
 }
-.li:nth-child(1):before {
+.glow-container a:nth-child(1):before {
   background: #7aa2f1;
 }
-.li:nth-child(2):before {
+.glow-container a:nth-child(2):before {
   background: #f04ecd;
 }
-.ul .li:nth-child(3):before {
+.glow-container a:nth-child(3):before {
   background: #45c5e6;
 }
-.ul .li:nth-child(4):before {
+.glow-container a:nth-child(4):before {
   background: #fafafa;
 }
-.ul .li:nth-child(5):before {
+.glow-container a:nth-child(5):before {
   background: #ff0000;
 }
-.ul .li:nth-child(6):before {
+.glow-container a:nth-child(6):before {
   background: #f4f758;
 }
-.ul .li:hover:before {
-  filter: blur(3px);
+.glow-container a:hover:before {
+  filter: blur(5px);
   transform: scale(1.2);
-  /* box-shadow: 0 0 15px #d35400; */
+  box-shadow: 0 0 15px #07f327;
 }
-.ul .li:nth-child(1):hover:before {
+/* .glow-container a:nth-child(1):hover:before {
   box-shadow: 0 0 15px #f5dc93;
 }
-.ul .li:nth-child(2):hover:before {
+.glow-container a:nth-child(2):hover:before {
   box-shadow: 0 0 15px #f5dc93;
 }
-.ul .li:nth-child(3):hover:before {
+.glow-container a:nth-child(3):hover:before {
   box-shadow: 0 0 15px #f5dc93;
 }
-.ul .li:nth-child(4):hover:before {
+.glow-container a:nth-child(4):hover:before {
   box-shadow: 0 0 15px #f5dc93;
 }
-.ul .li:nth-child(5):hover:before {
+.glow-container a:nth-child(5):hover:before {
   box-shadow: 0 0 15px #f5dc93;
 }
-.ul .li:nth-child(6):hover:before {
+.glow-container a:nth-child(6):hover:before {
   box-shadow: 0 0 15px #f5dc93;
-}
-.ul .li:nth-child(1):hover {
+} */
+.glow-container a:nth-child(1):hover {
   color: #7aa2f1;
   box-shadow: 0 0 15px #f5dc93;
   text-shadow: 0 0 15px #7aa2f1;
 }
-.ul .li:nth-child(2):hover {
+.glow-container a:nth-child(2):hover {
   color: #f04ecd;
   box-shadow: 0 0 15px #f5dc93;
   text-shadow: 0 0 15px #f04ecd;
 }
-.ul .li:nth-child(3):hover {
+.glow-container a:nth-child(3):hover {
   color: #45c5e6;
   box-shadow: 0 0 15px#f5dc93;
   text-shadow: 0 0 15px #45c5e6;
 }
-.ul .li:nth-child(4):hover {
+.glow-container a:nth-child(4):hover {
   color: #fafafa;
   box-shadow: 0 0 15px #f5dc93;
   text-shadow: 0 0 15px #fafafa;
 }
-.ul .li:nth-child(5):hover {
+.glow-container a:nth-child(5):hover {
   color: #ff1a1a;
   box-shadow: 0 0 15px#f5dc93;
   text-shadow: 0 0 15px #ff0000;
 }
-.ul .li:nth-child(6):hover {
+.glow-container a:nth-child(6):hover {
   color: #f4f758;
   box-shadow: 0 0 15px #f5dc93;
   text-shadow: 0 0 15px #f4f758;
