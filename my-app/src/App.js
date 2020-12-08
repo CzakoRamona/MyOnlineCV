@@ -33,7 +33,7 @@ class App extends Component {
             <FooterSection type="left" logo="Title">
               <FooterLinkList>
                 <a href="/">Help</a>
-                <a href="/">Privacy & Terms</a>
+                <a href="/">Privacy & Terms|Copyright &copy; 2020 </a>
               </FooterLinkList>
             </FooterSection>
           </Footer>

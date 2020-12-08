@@ -2,7 +2,42 @@ import React, { Component } from "react";
 class Contact extends Component {
     render() {
         return (
-            <div><h1>Contact Page</h1></div>
+            <div><h1>Contact Page</h1>
+                <div className="contact-font-glow-container">
+                    <div className="ul">
+                        <div className="li">
+                            <a href="https://www.facebook.com/vizitiu.ramonastela/?viewas=100000686899395" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-facebook-f" aria-hidden="true" />
+                            </a>
+                        </div>
+                        <div className="li">
+                            <a href="https://www.instagram.com/vizitiu.ramona.stela" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-instagram" aria-hidden="true" />
+                            </a>
+                        </div>
+                        <div className="li">
+                            <a href="https://linkedin.com/in/ramona-stela-dr-vizitiu-a4a347162" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-linkedin" aria-hidden="true" />
+                            </a>
+                        </div>
+                        <div className="li">
+                            <a href="https://github.com/CzakoRamona" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-github" aria-hidden="true" />
+                            </a>
+                        </div>
+                        <div className="li">
+                            <a href="https://www.youtube.com/channel/UCh6BZhaxmhbrf0HNn08PYQA?view_as=subscriber" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-youtube" aria-hidden="true" />
+                            </a>
+                        </div>
+                        <div className="li">
+                            <a href="drvizitiuramona@gmail" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-envelope" aria-hidden="true" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         )
     }
 }

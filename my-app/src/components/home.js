@@ -11,6 +11,10 @@ class Home extends Component {
                             alt="me"
                             className="me-image"
                         />
+                        <div className="banner-text">
+                            <h2>Hello, my name is<h1>Czako Ramona-Stela</h1></h2>
+                            <p>I'm a developer!</p>
+                        </div>
                     </Cell>
                 </Grid>
             </div>
