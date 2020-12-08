@@ -5,7 +5,12 @@ class Home extends Component {
         return (
             <div className="home-container">
                 <Grid className="home-grid">
-                    <Cell col={12}></Cell>
+                    <Cell col={12}>
+                        <img
+                            src="me.jpg"
+                            alt="me"
+                        />
+                    </Cell>
                 </Grid>
             </div>
         )
