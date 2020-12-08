@@ -43,23 +43,25 @@
 }
 .banner-text h2 {
   font-size: 58px;
-  font-family: Roboto;
+  font-family: Lemonada;
   font-weight: bold;
   color: rgb(42, 16, 85);
 }
 .banner-text h1 {
+  font-family: Dancing Script;
   font-style: italic;
-  font-size: 66px;
+  font-size: 60px;
   color: pink;
 }
 
 .banner-text p {
-  font-size: 60px;
-  font-family: Roboto;
+  font-size: 58px;
+  font-family: Lemonada;
   font-weight: bold;
   color: rgb(42, 16, 85);
 }
 #button-hire {
+  font-family: Lemonada;
   background-color: rgb(90, 5, 64);
   color: rgb(248, 163, 163);
 }

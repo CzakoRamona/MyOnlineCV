@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import { Cell, Grid } from "react-mdl";
 class Contact extends Component {
     render() {
         return (
             <div className="contact-container">
-                <div className="contact-form">
-
-                </div>
+                <Grid className="contact-grid">
+                    <Cell col={6}>half page</Cell>
+                    <Cell col={6}>half page</Cell>
+                </Grid>
 
                 <div className="contact-font-glow">
                     <div className="glow-container">
