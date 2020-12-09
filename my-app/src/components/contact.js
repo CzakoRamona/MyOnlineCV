@@ -1,12 +1,60 @@
 import React, { Component } from "react";
-import { Cell, Grid } from "react-mdl";
+import { Cell, Grid, List, ListItem, ListItemContent, Textfield, Button } from "react-mdl";
 class Contact extends Component {
     render() {
         return (
             <div className="contact-container">
                 <Grid className="contact-grid">
-                    <Cell col={6}>half page</Cell>
-                    <Cell col={6}>half page</Cell>
+                    <Cell col={6}>
+                        <h2>Get in touch</h2>
+                        <p>Looking for a software development partner that will ROCK your business?That's me, anticipating the start of a new journey and challenge! Can't wait to meet you....</p>
+                        <div className="contact-info">
+                            <List>
+                                <ListItem twoLine>
+                                    <ListItemContent style={{ fontWeight: 'bolder' }} avatar="person" subtitle="Czako Ramona-Stela">Name</ListItemContent>
+                                </ListItem>
+                                <ListItem twoLine>
+                                    <ListItemContent style={{ fontWeight: 'bolder' }} avatar="maped" subtitle="Cluj-Napoca, Str.Anton Pann 34-38">Adress</ListItemContent>
+                                </ListItem>
+                                <ListItem twoLine>
+                                    <ListItemContent style={{ fontWeight: 'bolder' }} avatar="mail" subtitle="drvizitiuramona@gmail.com">Email</ListItemContent>
+                                </ListItem>
+                            </List>
+                        </div>
+                    </Cell>
+
+                    <Cell col={6}>
+                        <h2>Message me</h2>
+                        <div className="contact-form">
+                            <form>
+                                <Textfield
+                                    onChange={() => { }}
+                                    label="Name..."
+                                    style={{ width: '200px' }}
+                                />
+
+                                <Textfield
+                                    onChange={() => { }}
+                                    pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                                    error="Input is not valid!"
+                                    label="Email..."
+                                    style={{ width: '200px' }}
+                                />
+                                <Textfield
+                                    onChange={() => { }}
+                                    label="Subject..."
+                                    style={{ width: '200px' }}
+                                />
+                                <Textfield
+                                    onChange={() => { }}
+                                    label="Describe project..."
+                                    rows={2}
+                                    style={{ width: '75%' }}
+                                />
+                                <Button raised accent ripple>Button</Button>
+                            </form>
+                        </div>
+                    </Cell>
                 </Grid>
 
                 <div className="contact-font-glow">
