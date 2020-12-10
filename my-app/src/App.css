@@ -101,7 +101,7 @@
     #00223e,
     #fd4472
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: black;
+  color: pink;
   border: 2px solid indigo;
   margin: 5px;
 }
@@ -116,11 +116,14 @@
   font-weight: bold;
 }
 .contact-form {
-  width: 50%;
+  width: 60%;
   height: 100%;
 }
-.contact-form Button {
-  margin: 10px;
+#button-send {
+  margin: auto;
+  font-family: Lemonada;
+  background-color: rgb(90, 5, 64);
+  color: rgb(248, 163, 163);
 }
 /* contact icons style */
 .contact-font-glow {

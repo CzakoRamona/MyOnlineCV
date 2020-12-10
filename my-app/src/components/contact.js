@@ -30,7 +30,7 @@ class Contact extends Component {
                                 <Textfield
                                     onChange={() => { }}
                                     label="Name..."
-                                    style={{ width: '200px' }}
+                                    style={{ width: '75%', color: 'pink' }}
                                 />
 
                                 <Textfield
@@ -38,12 +38,12 @@ class Contact extends Component {
                                     pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
                                     error="Input is not valid!"
                                     label="Email..."
-                                    style={{ width: '200px' }}
+                                    style={{ width: '75%' }}
                                 />
                                 <Textfield
                                     onChange={() => { }}
                                     label="Subject..."
-                                    style={{ width: '200px' }}
+                                    style={{ width: '75%' }}
                                 />
                                 <Textfield
                                     onChange={() => { }}
@@ -51,7 +51,7 @@ class Contact extends Component {
                                     rows={2}
                                     style={{ width: '75%' }}
                                 />
-                                <Button raised accent ripple>Button</Button>
+                                <Button raised accent ripple id="button-send">Send message</Button>
                             </form>
                         </div>
                     </Cell>
