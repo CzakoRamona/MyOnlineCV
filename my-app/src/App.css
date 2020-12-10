@@ -34,10 +34,26 @@
   margin: auto;
 }
 .me-image {
-  height: 500px;
-  padding-top: 5em;
+  background: url(me.jpg),
+    linear-gradient(
+      to left,
+      rgba(236, 197, 208, 0.8),
+      rgb(164, 138, 187, 0.8),
+      rgb(53, 92, 125, 0.8)
+    );
+  background-blend-mode: luminosity;
+  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0 !important;
+  border-style: none !important;
+  outline: none !important;
+  margin: auto;
+  width: 500px;
+  height: 700px;
 }
 .banner-text {
+  text-align: center;
   width: 75%;
   margin: auto;
 }
