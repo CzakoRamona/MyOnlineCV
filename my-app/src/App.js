@@ -9,15 +9,15 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title={<Link to="/">My CV</Link>} scroll>
+          <Header className="header-color" title={<Link id="link-CV" to="/">My CV</Link>} scroll>
             <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/showOff">Show Off</Link>
-              <Link to="/contact">Contact</Link>
+              <Link className="link-shadow" to="/resume">Resume</Link>
+              <Link className="link-shadow" to="/aboutme">About Me</Link>
+              <Link className="link-shadow" to="/showOff">Show Off</Link>
+              <Link className="link-shadow" to="/contact">Contact</Link>
             </Navigation>
           </Header>
-          <Drawer title={<Link to="/">My CV</Link>} className="drawer-color">
+          <Drawer title={<Link id="link-CV" to="/">My CV</Link>} className="drawer-color">
             <Navigation >
               <Link className="nav-drawer" to="/resume">Resume</Link>
               <Link className="nav-drawer" to="/aboutme">About Me</Link>
@@ -37,8 +37,8 @@ class App extends Component {
               </FooterLinkList>
             </FooterSection>
           </Footer>
-        </Layout>
-      </div>
+        </Layout >
+      </div >
 
     );
   }

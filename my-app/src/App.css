@@ -15,20 +15,28 @@
   font-family: Lobster;
 }
 .drawer-color {
-  background: rgb(250, 214, 220) !important;
+  background: rgb(236, 177, 224) !important;
   font-family: Lobster !important;
   font-size: 58px !important;
 }
 .nav-drawer {
-  color: rgb(112, 10, 66) !important;
+  color: rgb(32, 10, 112) !important;
 }
 .mdl-layout-title {
-  color: rgb(240, 172, 219) !important;
   font-family: Lobster !important;
   font-size: 58px !important;
 }
+#link-CV {
+  color: rgb(255, 145, 169) !important;
+}
+.link-shadow:hover {
+  filter: blur(0.5px);
+  transform: scale(1.2);
+  text-shadow: 0 0 50px #ffeb34;
+}
 .mdl-navigation__link {
   font-size: 28px !important;
+  color: rgb(255, 85, 122) !important;
 }
 /* home CSS */
 .home-grid {
@@ -119,63 +127,59 @@
   margin: auto;
 }
 .resume-left {
-  text-align: center;
+  border-right: 2px dotted pink;
 }
-.resume-left hr {
-  border-top: 3px solid indigo;
-  width: 50%;
+.resume-left-up {
+  text-align: center;
+  color: antiquewhite;
 }
 .profile-picture {
   height: 200px;
   border-radius: 50%;
 }
+.resume-left-down {
+  font-family: Lemonada !important;
+  color: rgb(240, 168, 218);
+}
 .resume-right-col {
-  background: rgb(98, 15, 119);
+  font-family: Lemonada;
   color: antiquewhite;
   padding: 2em;
 }
+
+.resume-right-col h2 {
+  font-family: Lemonada;
+  color: antiquewhite;
+}
 /* contact page */
 .contact-container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: auto;
   margin: auto;
-  position: fixed;
-  justify-content: center;
-  padding-top: 2em;
-  background: #fd4472; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #00223e,
-    #fd4472
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #00223e,
-    #fd4472
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background: #fd4472; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #00223e,
-    #fd4472
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #00223e,
-    #fd4472
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: pink;
-
-  margin: 5px;
 }
 .contact-grid h2 {
   font-family: Lobster, sans-serif;
+  text-align: center;
+  color: rgb(102, 3, 57);
 }
 .contact-grid p {
   width: 75%;
@@ -183,20 +187,22 @@
   padding-top: 1em;
   font-family: Raleway, sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 .contact-info #list-color {
-  color: rgb(253, 154, 171);
+  color: rgb(102, 3, 57);
+  text-align: center;
 }
 
 .mdl-list__item-sub-title {
-  color: pink !important;
+  color: rgb(250, 211, 218) !important;
 }
 .mdl-list__item-avatar {
-  color: pink !important;
+  color: rgb(253, 128, 128) !important;
 }
 .contact-form {
   width: 60%;
-  height: 100%;
+  height: auto;
 }
 .mdl-textfield__label {
   font-family: Raleway !important;
@@ -207,6 +213,14 @@
   font-family: Lemonada;
   background-color: rgb(90, 5, 64);
   color: rgb(248, 163, 163);
+}
+#button-send:hover {
+  margin: auto;
+  font-family: Lemonada;
+  background-color: rgb(90, 5, 64);
+  color: rgb(248, 163, 163);
+  box-shadow: 0 0 15px #f5dc93;
+  text-shadow: 0 0 15px #f04ecd;
 }
 /* contact icons style */
 .contact-font-glow {
@@ -266,11 +280,11 @@
 .glow-container a:nth-child(6):before {
   background: #f4f758;
 }
-.glow-container a:hover:before {
+/* .glow-container a:hover:before {
   filter: blur(5px);
   transform: scale(1.2);
-  box-shadow: 0 0 15px #07f327;
-}
+  box-shadow: 0 0 30px #4213ec;
+} */
 /* .glow-container a:nth-child(1):hover:before {
   box-shadow: 0 0 15px #f5dc93;
 }
