@@ -12,7 +12,25 @@
     #6c5b7b,
     #355c7d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Lobster;
 }
+.drawer-color {
+  background: rgb(250, 214, 220) !important;
+  font-family: Lobster !important;
+  font-size: 58px !important;
+}
+.nav-drawer {
+  color: rgb(112, 10, 66) !important;
+}
+.mdl-layout-title {
+  color: rgb(240, 172, 219) !important;
+  font-family: Lobster !important;
+  font-size: 58px !important;
+}
+.mdl-navigation__link {
+  font-size: 28px !important;
+}
+/* home CSS */
 .home-grid {
   background: #355c7d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -59,7 +77,7 @@
 }
 .banner-text h2 {
   font-size: 58px;
-  font-family: Lemonada;
+  font-family: Lobster;
   font-weight: bold;
   color: rgb(42, 16, 85);
 }
@@ -72,7 +90,7 @@
 
 .banner-text p {
   font-size: 58px;
-  font-family: Lemonada;
+  font-family: Lobster;
   font-weight: bold;
   color: rgb(42, 16, 85);
 }
@@ -80,6 +98,41 @@
   font-family: Lemonada;
   background-color: rgb(90, 5, 64);
   color: rgb(248, 163, 163);
+}
+/* resume CSS */
+.resume-grid {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.resume-left {
+  text-align: center;
+}
+.resume-left hr {
+  border-top: 3px solid indigo;
+  width: 50%;
+}
+.profile-picture {
+  height: 200px;
+  border-radius: 50%;
+}
+.resume-right-col {
+  background: rgb(98, 15, 119);
+  color: antiquewhite;
+  padding: 2em;
 }
 /* contact page */
 .contact-container {
