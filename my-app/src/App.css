@@ -295,6 +295,13 @@ pre {
     #355c7d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.mdl-tabs__tab {
+  font-family: Lemonada;
+  color: rgb(68, 7, 58) !important;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: rgba(248, 157, 157, 0.87) !important;
+}
 .cards-container {
   display: flex;
   width: 100%;
