@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from "react-mdl";
+import CoffeeCarousel from "../components/photoSlider/CoffeeCarousel";
 class ShowOff extends Component {
     constructor(props) {
         super(props);
@@ -128,18 +129,10 @@ class ShowOff extends Component {
             return (
                 <div className="cards-content"><h1>Guilty pleasures...</h1>
                     <div className="cards-container">
-                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Coffee</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
+                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }} >
+
+                            < CoffeeCarousel style={{ minWidth: '450px', margin: 'auto' }} />
+
                         </Card>
                         <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
                             <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Good food</CardTitle>
@@ -155,8 +148,8 @@ class ShowOff extends Component {
                             </CardMenu>
                         </Card>
 
-                    </div>
-                </div>
+                    </div >
+                </div >
             )
         }
     }
