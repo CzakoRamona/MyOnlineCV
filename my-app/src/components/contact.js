@@ -48,7 +48,7 @@ class Contact extends Component {
                                 </a>
 
 
-                                <a href="drvizitiuramona@gmail" rel="noopener noreferrer" target="_blank">
+                                <a href="mailto:drvizitiuramona@gmail" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-envelope" aria-hidden="true" />
                                 </a>
                             </div>
@@ -83,7 +83,9 @@ class Contact extends Component {
                                     rows={2}
                                     style={{ width: '75%' }}
                                 />
-                                <Button raised accent ripple id="button-send">Send message</Button>
+                                <a href="mailto:drvizitiuramona@gmail" rel="noopener noreferrer" target="_blank">
+                                    <Button raised accent ripple id="button-send"> Send message</Button></a>
+
                             </form>
 
                         </div>

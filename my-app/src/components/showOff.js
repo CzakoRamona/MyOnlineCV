@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from "react-mdl";
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton, Tooltip, Icon } from "react-mdl";
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 import CoffeeCarousel from "../components/photoSlider/CoffeeCarousel";
+
+
 class ShowOff extends Component {
     constructor(props) {
         super(props);
@@ -129,10 +133,9 @@ class ShowOff extends Component {
             return (
                 <div className="cards-content"><h1>Guilty pleasures...</h1>
                     <div className="cards-container">
-                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }} >
-
-                            < CoffeeCarousel style={{ minWidth: '450px', margin: 'auto' }} />
-
+                        <Card shadow={5} style={{ minWidth: '512px', margin: 'auto' }} >
+                            <CardTitle style={{ color: " #c06c84 " }}>Coffee</CardTitle>
+                            <CoffeeCarousel />
                         </Card>
                         <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
                             <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Good food</CardTitle>
