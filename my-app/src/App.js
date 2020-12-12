@@ -29,7 +29,7 @@ class App extends Component {
             <div className="page-content" />
             <Main />
           </Content>
-          <Footer size="mini">
+          <Footer size="mini" className="footer">
             <FooterSection type="left" logo="My CV">
               <FooterLinkList>
                 <a href="/">Help</a>

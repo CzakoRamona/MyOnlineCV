@@ -95,13 +95,16 @@ class Resume extends Component {
                         <Skills
                             skill="CSS"
                             progress={90}
+                            skillProgress="90%"
                         />
                         <Skills
                             skill="Java Script"
                             progress={80}
+                            skillProgress="80%"
                         /><Skills
                             skill="React"
                             progress={80}
+                            skillProgress="80%"
 
                         />
 

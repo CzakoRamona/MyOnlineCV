@@ -3,19 +3,19 @@
   background: -webkit-linear-gradient(
     to left,
     #c06c84,
-    #6c5b7b,
-    #355c7d
+    #786688,
+    #3f719c
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
     #c06c84,
-    #6c5b7b,
-    #355c7d
+    #786688,
+    #3f719c
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: Lobster;
 }
 .drawer-color {
-  background: rgb(236, 177, 224) !important;
+  background: #c06c84 !important;
   font-family: Lobster !important;
   font-size: 58px !important;
 }
@@ -36,7 +36,7 @@
 }
 .mdl-navigation__link {
   font-size: 28px !important;
-  color: rgb(255, 85, 122) !important;
+  color: #ffb492 !important;
 }
 /* home CSS */
 .home-grid {
@@ -274,9 +274,46 @@
   }
 }
 .about-left p,
-.about-right p {
+.about-right p,
+pre {
   font-family: Lemonada;
   color: #ffb492;
+}
+/* Show Off CSS */
+.category-tabs {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cards-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /* resume CSS */
 .resume-grid {
@@ -503,4 +540,20 @@
   color: #f4f758;
   box-shadow: 0 0 15px #f5dc93;
   text-shadow: 0 0 15px #f4f758;
+}
+.footer {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #786688,
+    #3f719c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #786688,
+    #3f719c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffb492 !important;
 }

@@ -17,7 +17,8 @@ class AboutMe extends Component {
                         intuitive designs.
                         When I'm not coding, tweeting or pushing pixels,
                         you'll find me dancing, drawing, day dreaming, cooking, gardening or singing.</p>
-                        <p> I like to hear what you want and imagine in your project and  make your dreams come truth, in a creative and inspired mode</p>
+                        <p> I like to hear what you want and imagine in your project and  make your dreams come truth, in a creative and inspired mode.
+                        I bring great ideas to life.</p>
                     </Cell>
                     <Cell col={8} className="about-right">
                         <p>“Life is full of beauty. Notice it. Notice the bumble bee, the small child, and the smiling faces. Smell the rain, and feel the wind. Live your life to the fullest potential, and fight for your dreams.”
@@ -26,7 +27,15 @@ class AboutMe extends Component {
                             “You are never too old to set another goal or to dream a new dream.”
 – C.S. Lewis</p>
                         <p>When life give's you lemons... make a lemonade or lemon cake?</p>
+
                         <p>I studied and learned to bee a pediatrician,but in this pandemic times I rediscovered me, in creating beutifull web designs</p>
+                        <pre>
+                            Here are a few technologies I've been working with recently:
+                            <br />      * JavaScript (ES6+)
+                            <br />      * HTML & CSS
+                            <br />      * React
+                            <br />      * Node.js
+                        </pre>
                     </Cell>
 
 
