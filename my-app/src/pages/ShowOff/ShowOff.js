@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton, Tooltip, Icon } from "react-mdl";
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import CoffeeCarousel from "../components/photoSlider/CoffeeCarousel";
+import CoffeeCarousel from "../../components/photoSlider/CoffeeCarousel";
 
 
 class ShowOff extends Component {

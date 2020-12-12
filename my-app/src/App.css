@@ -1,19 +1,10 @@
 .header-color {
-  background: #355c7d; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #c06c84,
-    #786688,
-    #3f719c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #c06c84,
-    #786688,
-    #3f719c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #355c7d;
+  background: -webkit-linear-gradient(to left, #c06c84, #786688, #3f719c);
+  background: linear-gradient(to left, #c06c84, #786688, #3f719c);
   font-family: Lobster;
 }
+
 .drawer-color {
   background: #c06c84 !important;
   font-family: Lobster !important;

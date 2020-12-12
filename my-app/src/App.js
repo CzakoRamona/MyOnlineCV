@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from "react-mdl";
-import Main from "./components/main";
+import { Switch, Route } from "react-router-dom";
+import Home from "./home";
+import AboutMe from "./components/pages/AboutMe/AboutMe";
+import ShowOff from "./showOff";
+import Contact from "./contact";
+import Resume from "./resume";
 import { Link } from "react-router-dom";
 class App extends Component {
   render() {
@@ -27,7 +31,13 @@ class App extends Component {
           </Drawer>
           <Content>
             <div className="page-content" />
-            <Main />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/aboutme" component={AboutMe} />
+              <Route path="/showOff" component={ShowOff} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/resume" component={Resume} />
+            </Switch>
           </Content>
           <Footer size="mini" className="footer">
             <FooterSection type="left" logo="My CV">
