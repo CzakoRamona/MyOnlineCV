@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import me from "../me.jpg";
+import me from "./CVcomponents/me.jpg";
 import Education from "../Resume/CVcomponents/education";
 import Experience from "../Resume/CVcomponents/experience";
 import Skills from "../Resume/CVcomponents/skills"
