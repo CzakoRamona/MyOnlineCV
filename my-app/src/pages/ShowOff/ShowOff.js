@@ -1,7 +1,12 @@
 import React, { Component } from "react";
+import "./ShowOff.css";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from "react-mdl";
 import CoffeeCarousel from "../../components/photoSlider/CoffeeCarousel";
 import FoodCarousel from "../../components/photoSlider/FoodCarousel";
+import PlayerGame from "./PlayerGame.png";
+import DrBooBoo from "./DrBooBoo.png";
+import MyIMDB-16.2 from "./MyIMDB-16.2.png";
+
 
 class ShowOff extends Component {
     constructor(props) {
@@ -13,8 +18,48 @@ class ShowOff extends Component {
             return (
                 <div><h1>My IT projects</h1>
                     <div className="cards-container">
-                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}> React Project-My IMD-16.2</CardTitle>
+                        <Card shadow={5} style={{ width: '512px', height: "600px", margin: 'auto' }}>
+                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}> My first IT project-DrBooBoo page</CardTitle>
+                            <div className="project-photo" >
+                                <img src={DrBooBoo} alt="first project" />
+                            </div>
+
+                            <CardText> This was my first project, a basic blog page.I used elementary HTML and CSS elements with styling:
+                            background image,textbox, radio buttons, checkbox, button,dropdown list , hyperlink etc.
+                        </CardText>
+                            <CardActions border>
+                                <a href="https://github.com/CzakoRamona/DrBooBooProject" rel="noopener noreferrer" target="_blank">
+                                    <Button colored>GitHub</Button>
+                                </a>
+                            </CardActions>
+                            <CardMenu style={{ color: '#fff' }}>
+                                <IconButton name="share" />
+                            </CardMenu>
+                        </Card>
+                        <Card shadow={5} style={{ width: '512px', height: "600px", margin: 'auto' }}>
+                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}>PlayerGame</CardTitle>
+                            <div>
+                                <img src={PlayerGame} alt="player game" className="project-photo" />
+                            </div>
+                            <CardText>
+                                In this project I used JavaScript ES6 and OOP style.
+                                The Player(the red square) smoothly moves across the screen utilizing keyboard input,
+                                and can't go outside the Game Container(the black square).
+                        </CardText>
+                            <CardActions border>
+                                <a href="https://github.com/CzakoRamona/PlayerGame" rel="noopener noreferrer" target="_blank">
+                                    <Button colored>GitHub</Button>
+                                </a>
+                            </CardActions>
+                            <CardMenu style={{ color: '#fff' }}>
+                                <IconButton name="share" />
+                            </CardMenu>
+                        </Card>
+                        <Card shadow={5} style={{ width: '512px', height: "600px", margin: 'auto' }}>
+                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}> React Project-My IMD-16.2</CardTitle>
+                            <div>
+                                <img src={MyIMDB - 16.2} alt="IMDB-like app" className="project-photo" />
+                            </div>
                             <CardText>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Mauris sagittis pellentesque lacus eleifend lacinia...
@@ -28,36 +73,8 @@ class ShowOff extends Component {
                                 <IconButton name="share" />
                             </CardMenu>
                         </Card>
-                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>PlayerGame</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/CzakoRamona/PlayerGame" rel="noopener noreferrer" target="_blank">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>My first IT project-DrBooBoo page</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                            <CardActions border>
-                                <a href="https://github.com/CzakoRamona/DrBooBooProject" rel="noopener noreferrer" target="_blank">
-                                    <Button colored>GitHub</Button>
-                                </a>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
+
+
                     </div>
                 </div>
             )
@@ -131,10 +148,6 @@ class ShowOff extends Component {
             return (
                 <div className="cards-content"><h1>Guilty pleasures...</h1>
                     <div className="cards-container" >
-                        {/* <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }} >
-                            <CardTitle style={{ color: " #c06c84 " }}>Coffee</CardTitle>
-                            <CoffeeCarousel />
-                        </Card> */}
                         <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
                             <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}>Coffee</CardTitle>
                             <CoffeeCarousel />

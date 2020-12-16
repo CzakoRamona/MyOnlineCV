@@ -7,7 +7,6 @@ class Home extends Component {
                 <Grid className="home-grid">
                     <Cell col={12}>
                         <div className="me-image" >
-                            {/* <img src="" alt="me" /> */}
                         </div>
                         <div className="banner-text">
                             <h2>Hello, my name is<h1>Czako Ramona-Stela</h1></h2>

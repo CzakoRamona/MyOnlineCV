@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Footer.css';
+import './FooterBar.css';
 import { Footer, FooterLinkList, FooterSection } from "react-mdl";
 class FooterBar extends Component {
   render() {

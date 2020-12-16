@@ -1,0 +1,24 @@
+.drawer-color {
+  background: #c06c84 !important;
+  font-family: Lobster !important;
+  font-size: 58px !important;
+}
+.nav-drawer {
+  color: rgb(32, 10, 112) !important;
+}
+.mdl-layout-title {
+  font-family: Lobster !important;
+  font-size: 58px !important;
+}
+#link-CV {
+  color: rgb(255, 145, 169) !important;
+}
+.link-shadow:hover {
+  filter: blur(0.5px);
+  transform: scale(1.2);
+  text-shadow: 0 0 50px #ffeb34;
+}
+.mdl-navigation__link {
+  font-size: 28px !important;
+  color: #ffb492 !important;
+}

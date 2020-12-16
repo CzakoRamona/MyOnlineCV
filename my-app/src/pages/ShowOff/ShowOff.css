@@ -1,0 +1,9 @@
+.cards-container {
+  flex-wrap: wrap;
+}
+.project-photo {
+  background-color: #5f91fd;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
