@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from "react-mdl";
 import '@brainhubeu/react-carousel/lib/style.css';
 import CoffeeCarousel from "../../components/photoSlider/CoffeeCarousel";
-
+import FoodCarousel from "../../components/photoSlider/FoodCarousel";
 
 class ShowOff extends Component {
     constructor(props) {
@@ -132,22 +132,13 @@ class ShowOff extends Component {
             return (
                 <div className="cards-content"><h1>Guilty pleasures...</h1>
                     <div className="cards-container">
-                        <Card shadow={5} style={{ minWidth: '512px', margin: 'auto' }} >
+                        <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }} >
                             <CardTitle style={{ color: " #c06c84 " }}>Coffee</CardTitle>
                             <CoffeeCarousel />
                         </Card>
-                        <Card shadow={5} style={{ minWidth: '450px', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Good food</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
+                        <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
+                            <CardTitle style={{ color: " #c06c84 " }}>Good food</CardTitle>
+                            <FoodCarousel />
                         </Card>
 
                     </div >
