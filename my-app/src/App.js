@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import './App.css';
-import { Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from "react-mdl";
+import { Layout, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList } from "react-mdl";
 import { Switch, Route } from "react-router-dom";
+import HeaderBar from "./components/Header/HeaderBar";
+import FooterBar from "./components/Footer/FooterBar";
 import Home from "./pages/Home/Home";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import ShowOff from "./pages/ShowOff/ShowOff";
@@ -13,14 +15,7 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <Layout>
-          <Header className="header-color" title={<Link id="link-CV" to="/">My CV</Link>} scroll>
-            <Navigation>
-              <Link className="link-shadow" to="/Resume">Resume</Link>
-              <Link className="link-shadow" to="/AboutMe">About Me</Link>
-              <Link className="link-shadow" to="/ShowOff">Show Off</Link>
-              <Link className="link-shadow" to="/Contact">Contact</Link>
-            </Navigation>
-          </Header>
+          <HeaderBar />
           <Drawer title={<Link id="link-CV" to="/">My CV</Link>} className="drawer-color">
             <Navigation >
               <Link className="nav-drawer" to="/Resume">Resume</Link>
@@ -39,14 +34,7 @@ class App extends Component {
               <Route path="/Resume" component={Resume} />
             </Switch>
           </Content>
-          <Footer size="mini" className="footer">
-            <FooterSection type="left" logo="My CV">
-              <FooterLinkList>
-                <a href="/">Help</a>
-                <a href="/">Privacy & Terms|Copyright &copy; 2020 </a>
-              </FooterLinkList>
-            </FooterSection>
-          </Footer>
+          <FooterBar />
         </Layout >
       </div >
 

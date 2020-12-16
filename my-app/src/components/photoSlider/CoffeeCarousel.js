@@ -1,17 +1,27 @@
 import React from 'react';
-import Carousel from '@brainhubeu/react-carousel';
-import '@brainhubeu/react-carousel/lib/style.css';
+import Carousel from 'react-bootstrap/Carousel';
 import coffee1 from '../photoSlider/coffee1.jpg';
 import coffee2 from '../photoSlider/coffee2.jpg';
+
 const CoffeeCarousel = () => (
-    <div style={{ display: 'flex', justifyContent: 'center', flexFlow: 'row', alignContent: 'center', textAlign: 'center' }}>
-        <Carousel plugins={['rtl', 'arrows',]}>
-            <img src={coffee1} />
-            <img src={coffee2} />
+    <Carousel>
+        <Carousel.Item>
+            <img
+                className="d-block w-100"
+                src={coffee1}
+                alt="First slide"
+            />
+        </Carousel.Item>
 
-        </Carousel>
+        <Carousel.Item>
+            <img
+                className="d-block w-100"
+                src={coffee2}
+                alt="Second slide"
+            />
+        </Carousel.Item>
 
-    </div>
+
+    </Carousel>
 );
-
 export default CoffeeCarousel;

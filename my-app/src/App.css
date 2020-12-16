@@ -357,6 +357,20 @@ pre {
   font-family: Lemonada;
   color: antiquewhite;
 }
+/* show off page */
+.cards-container {
+  flex-wrap: wrap;
+}
+/* .mdl-card__title {
+  align-items: center;
+  display: flex;
+  justify-content: stretch;
+  line-height: normal;
+  padding: 16px 16px;
+  perspective-origin: 165px 56px;
+  transform-origin: 165px 56px;
+  box-sizing: border-box;
+} */
 /* contact page */
 .contact-container {
   width: 80%;

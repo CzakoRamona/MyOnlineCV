@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from "react-mdl";
-import '@brainhubeu/react-carousel/lib/style.css';
 import CoffeeCarousel from "../../components/photoSlider/CoffeeCarousel";
 import FoodCarousel from "../../components/photoSlider/FoodCarousel";
 
@@ -131,9 +130,13 @@ class ShowOff extends Component {
         } else if (this.state.activeTab === 3) {
             return (
                 <div className="cards-content"><h1>Guilty pleasures...</h1>
-                    <div className="cards-container">
-                        <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }} >
+                    <div className="cards-container" >
+                        {/* <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }} >
                             <CardTitle style={{ color: " #c06c84 " }}>Coffee</CardTitle>
+                            <CoffeeCarousel />
+                        </Card> */}
+                        <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
+                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}>Coffee</CardTitle>
                             <CoffeeCarousel />
                         </Card>
                         <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
