@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./ShowOff.css";
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button, CardMenu, IconButton } from "react-mdl";
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button } from "react-mdl";
 import CoffeeCarousel from "../../components/photoSlider/CoffeeCarousel";
 import FoodCarousel from "../../components/photoSlider/FoodCarousel";
-import PlayerGame from "./PlayerGame.png";
-import DrBooBoo from "./DrBooBoo.png";
-import MyIMDB from "./MyIMDB.png";
+import PlayerGame from "./photos/Projects/PlayerGame.png";
+import DrBooBoo from "./photos/Projects/DrBooBoo.png";
+import MyIMDB from "./photos/Projects/MyIMDB.png";
 
 
 class ShowOff extends Component {

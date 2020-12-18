@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import coffee1 from '../photoSlider/coffee1.jpg';
-import coffee2 from '../photoSlider/coffee2.jpg';
+import coffee1 from './photoSlider/Coffee/coffee1.jpg';
+import coffee2 from './photoSlider/Coffee/coffee2.jpg';
 
 const CoffeeCarousel = () => (
     <Carousel>
