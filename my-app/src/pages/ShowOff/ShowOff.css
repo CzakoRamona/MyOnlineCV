@@ -1,8 +1,22 @@
 .cards-container {
   flex-wrap: wrap;
+  justify-content: center;
 }
 .project-photo {
-  background-color: #5f91fd;
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #5441999d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #c06c84, #6c5b7b, #5441999d);
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #5441999d
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
