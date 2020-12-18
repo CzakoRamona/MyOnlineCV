@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "./ShowOff.css";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button } from "react-mdl";
-import CoffeeCarousel from "../../components/photoSlider/CoffeeCarousel";
-import FoodCarousel from "../../components/photoSlider/FoodCarousel";
+import CoffeeCarousel from "./photoSlider/CoffeeCarousel";
+import FoodCarousel from "./photoSlider/FoodCarousel";
+import CatsCarousel from "./photoSlider/CatsCarousel";
 import PlayerGame from "./photos/Projects/PlayerGame.png";
 import DrBooBoo from "./photos/Projects/DrBooBoo.png";
 import MyIMDB from "./photos/Projects/MyIMDB.png";
@@ -112,24 +113,19 @@ class ShowOff extends Component {
             )
         } else if (this.state.activeTab === 2) {
             return (
-                <div><h1>Cats</h1>
+                <div className="cards-content">
                     <div className="cards-container">
-                        <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Cats</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
+                        <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
+                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}>Cats</CardTitle>
+                            <CatsCarousel />
                         </Card>
                     </div>
+                    <h3>Cats,the most intelligent and independent animals</h3>
                 </div>
             )
         } else if (this.state.activeTab === 3) {
             return (
-                <div className="cards-content"><h1>Guilty pleasures...</h1>
+                <div className="cards-content">
                     <div className="cards-container" >
                         <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
                             <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}>Coffee</CardTitle>
@@ -139,7 +135,7 @@ class ShowOff extends Component {
                             <CardTitle style={{ color: " #c06c84 " }}>Good food</CardTitle>
                             <FoodCarousel />
                         </Card>
-
+                        <h3>Guilty pleasures...but, a good coffee and a tasty meal can make the moments more beautiful</h3>
                     </div >
                 </div >
             )

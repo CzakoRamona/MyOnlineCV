@@ -1,18 +1,20 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import food1 from '../photos/Food/food1.jpg';
-import food2 from '../photos/Food/food2.jpg';
-import food3 from '../photos/Food/food3.jpg';
-import food4 from '../photos/Food/food4.jpg';
-import food5 from '../photos/Food/food5.jpg';
-import food6 from '../photos/Food/food6.jpg';
-import food7 from '../photos/Food/food7.jpg';
-const FoodCarousel = () => (
+import cat1 from '../photos/Cats/cat1.jpg';
+import cat2 from '../photos/Cats/cat2.jpg';
+import cat3 from '../photos/Cats/cat3.jpg';
+import cat4 from '../photos/Cats/cat4.jpg';
+import cat5 from '../photos/Cats/cat5.jpg';
+import cat6 from '../photos/Cats/cat6.jpg';
+import cat7 from '../photos/Cats/cat7.jpg';
+import cat8 from '../photos/Cats/cat8.jpg';
+import cat9 from '../photos/Cats/cat9.jpg';
+const CatsCarousel = () => (
     <Carousel>
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food6}
+                src={cat1}
                 alt="First slide"
             />
         </Carousel.Item>
@@ -20,14 +22,14 @@ const FoodCarousel = () => (
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food2}
+                src={cat2}
                 alt="Second slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food3}
+                src={cat3}
                 alt="slide"
             />
         </Carousel.Item>
@@ -35,32 +37,46 @@ const FoodCarousel = () => (
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food4}
+                src={cat4}
                 alt="slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food5}
+                src={cat5}
                 alt="slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food1}
+                src={cat6}
                 alt="slide"
             />
         </Carousel.Item>
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={food7}
+                src={cat7}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                className="d-block w-100"
+                src={cat8}
+                alt="slide"
+            />
+        </Carousel.Item>
+        <Carousel.Item>
+            <img
+                className="d-block w-100"
+                src={cat9}
                 alt="slide"
             />
         </Carousel.Item>
     </Carousel>
 );
 
-export default FoodCarousel;
+export default CatsCarousel;

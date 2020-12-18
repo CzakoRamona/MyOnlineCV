@@ -1,7 +1,63 @@
+.category-tabs {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mdl-tabs__tab {
+  font-family: Lemonada;
+  color: rgb(68, 7, 58) !important;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: rgba(248, 157, 157, 0.87) !important;
+}
+.mdl-layout__content {
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 .cards-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: center;
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .project-photo {
   background: #355c7d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -45,4 +101,10 @@
 .mdl-button.mdl-button--colored {
   color: #55052d !important;
   font-weight: bold;
+}
+h3 {
+  text-align: center;
+  font-size: 16px;
+  color: #55052d !important;
+  font-family: Lemonada !important;
 }
