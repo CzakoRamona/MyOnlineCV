@@ -19,7 +19,7 @@ class ShowOff extends Component {
                 <div><h1>My IT projects</h1>
                     <div className="cards-container">
                         <Card shadow={5} style={{ width: '600px', height: "600px", margin: 'auto' }}>
-                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}> My first IT project-DrBooBoo page</CardTitle>
+                            <CardTitle > My first IT project-DrBooBoo page</CardTitle>
                             <div className="project-photo" >
                                 <img src={DrBooBoo} alt="first project" />
                             </div>
@@ -35,7 +35,7 @@ class ShowOff extends Component {
 
                         </Card>
                         <Card shadow={5} style={{ width: '600px', height: "600px", margin: 'auto' }}>
-                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}>PlayerGame</CardTitle>
+                            <CardTitle >PlayerGame</CardTitle>
                             <div className="project-photo" >
                                 <img src={PlayerGame} alt="player game" />
                             </div>
@@ -52,7 +52,7 @@ class ShowOff extends Component {
 
                         </Card>
                         <Card shadow={5} style={{ width: '600px', height: "600px", margin: 'auto' }}>
-                            <CardTitle style={{ fontSize: "auto", color: " #c06c84 " }}> React Project-My IMD-16.2</CardTitle>
+                            <CardTitle > React Project-My IMD-16.2</CardTitle>
                             <div className="project-photo" >
                                 <img src={MyIMDB} alt="IMDB-like app" />
                             </div>
@@ -77,7 +77,7 @@ class ShowOff extends Component {
                 <div><h1>Hobbies</h1>
                     <div className="cards-container">
                         <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Photo</CardTitle>
+                            <CardTitle>Photo</CardTitle>
                             <CardText>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Mauris sagittis pellentesque lacus eleifend lacinia...
@@ -85,12 +85,20 @@ class ShowOff extends Component {
                             <CardActions border>
                                 <Button colored>GitHub</Button>
                             </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
                         </Card>
                         <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Drawing</CardTitle>
+                            <CardTitle>Drawing</CardTitle>
+                            <CardText>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Mauris sagittis pellentesque lacus eleifend lacinia...
+                            </CardText>
+                            <CardActions border>
+                                <Button colored>GitHub</Button>
+                            </CardActions>
+
+                        </Card>
+                        <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
+                            <CardTitle>Dancing</CardTitle>
                             <CardText>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Mauris sagittis pellentesque lacus eleifend lacinia...
@@ -98,22 +106,6 @@ class ShowOff extends Component {
                             <CardActions border>
                                 <Button colored>GitHub</Button>
                             </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
-                        </Card>
-                        <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
-                            <CardTitle style={{ color: '#fff', height: '176px', background: 'url(http://www.getmdl.io/assets/demos/welcome_card.jpg) center / cover' }}>Dancing</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                    </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
                         </Card>
                     </div>
                 </div>
@@ -131,9 +123,6 @@ class ShowOff extends Component {
                             <CardActions border>
                                 <Button colored>GitHub</Button>
                             </CardActions>
-                            <CardMenu style={{ color: '#fff' }}>
-                                <IconButton name="share" />
-                            </CardMenu>
                         </Card>
                     </div>
                 </div>

@@ -21,3 +21,28 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.mdl-card__title {
+  background-color: #5441999d !important;
+}
+.mdl-card__title-text {
+  font-size: 16px;
+  color: #55052d !important;
+  font-family: Lemonada !important;
+}
+.mdl-card__supporting-text {
+  width: 100% !important;
+  line-height: 15px !important;
+  padding: 5px !important;
+  background-color: #c06c84;
+  font-family: Lemonada;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #55052d !important;
+}
+.mdl-card__actions {
+  background-color: #d8799d !important;
+}
+.mdl-button.mdl-button--colored {
+  color: #55052d !important;
+  font-weight: bold;
+}
