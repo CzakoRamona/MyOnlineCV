@@ -4,6 +4,7 @@ import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardActions, CardText, Button }
 import CoffeeCarousel from "./photoSlider/CoffeeCarousel";
 import FoodCarousel from "./photoSlider/FoodCarousel";
 import CatsCarousel from "./photoSlider/CatsCarousel";
+import PlantsWorldCarousel from "./photoSlider/PlantsWorldCarousel";
 import PlayerGame from "./photos/Projects/PlayerGame.png";
 import DrBooBoo from "./photos/Projects/DrBooBoo.png";
 import MyIMDB from "./photos/Projects/MyIMDB.png";
@@ -17,7 +18,7 @@ class ShowOff extends Component {
     toggleCategories() {
         if (this.state.activeTab === 0) {
             return (
-                <div><h1>My IT projects</h1>
+                <div>
                     <div className="cards-container">
                         <Card shadow={5} style={{ width: '600px', height: "600px", margin: 'auto' }}>
                             <CardTitle > My first IT project-DrBooBoo page</CardTitle>
@@ -71,45 +72,27 @@ class ShowOff extends Component {
 
 
                     </div>
+                    <h5>My path in IT started in May 2020, driven by curiosity and the need for a new beginning.These projects are just a small part of the workshops I did in informal school courses. </h5>
                 </div>
             )
         } else if (this.state.activeTab === 1) {
             return (
                 <div><h1>Hobbies</h1>
                     <div className="cards-container">
-                        <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
+                        <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
                             <CardTitle>Photo</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                        </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
+                            <div className="slides-container">
+                                <PlantsWorldCarousel />
+                            </div>
                         </Card>
                         <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
                             <CardTitle>Drawing</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                            </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
-
                         </Card>
                         <Card shadow={5} style={{ width: 'auto', margin: 'auto' }}>
                             <CardTitle>Dancing</CardTitle>
-                            <CardText>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Mauris sagittis pellentesque lacus eleifend lacinia...
-                    </CardText>
-                            <CardActions border>
-                                <Button colored>GitHub</Button>
-                            </CardActions>
                         </Card>
                     </div>
-                </div>
+                </div >
             )
         } else if (this.state.activeTab === 2) {
             return (
@@ -120,7 +103,7 @@ class ShowOff extends Component {
                             <CatsCarousel />
                         </Card>
                     </div>
-                    <h3>Cats,the most intelligent and independent animals</h3>
+                    <h5>Cats,the most intelligent and independent animals</h5>
                 </div>
             )
         } else if (this.state.activeTab === 3) {
@@ -135,8 +118,8 @@ class ShowOff extends Component {
                             <CardTitle style={{ color: " #c06c84 " }}>Good food</CardTitle>
                             <FoodCarousel />
                         </Card>
-                        <h3>Guilty pleasures...but, a good coffee and a tasty meal can make the moments more beautiful</h3>
                     </div >
+                    <h5>Guilty pleasures...but, a good coffee and a tasty meal can make difficult times easier.</h5>
                 </div >
             )
         }
