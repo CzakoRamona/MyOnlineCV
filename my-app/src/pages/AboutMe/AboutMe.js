@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Grid, Cell } from "react-mdl";
+import { Grid, Cell, List, ListItem } from "react-mdl";
+import "./AboutMe.css";
 class AboutMe extends Component {
     render() {
         return (
@@ -29,13 +30,15 @@ class AboutMe extends Component {
                         <p>When life give's you lemons... make a lemonade or lemon cake?</p>
 
                         <p>I studied and learned to bee a pediatrician,but in this pandemic times I rediscovered me, in creating beutifull web designs</p>
-                        <pre>
+                        <p>
                             Here are a few technologies I've been working with recently:
-                            <br />      * JavaScript (ES6+)
-                            <br />      * HTML & CSS
-                            <br />      * React
-                            <br />      * Node.js
-                        </pre>
+                            <List>
+                                <ListItem>* JavaScript (ES6+)</ListItem>
+                                <ListItem>* HTML & CSS</ListItem>
+                                <ListItem>* React</ListItem>
+                                <ListItem>* Node.js</ListItem>
+                            </List>
+                        </p>
                     </Cell>
 
 

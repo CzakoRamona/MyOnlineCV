@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, Button } from "react-mdl";
+import "./Home.css"
 class Home extends Component {
     render() {
         return (
@@ -10,7 +11,7 @@ class Home extends Component {
                         </div>
                         <div className="banner-text">
                             <h2>Hello, my name is<h1>Czako Ramona-Stela</h1></h2>
-                            <p>I'm a developer!</p>
+                            <p>I'm a junior developer!</p>
                             <Button raised accent ripple id="button-hire">Hire me</Button>
                         </div>
                     </Cell>

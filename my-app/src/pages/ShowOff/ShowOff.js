@@ -7,6 +7,8 @@ import CatsCarousel from "./photoSlider/CatsCarousel";
 import PlantsWorldCarousel from "./photoSlider/PlantsWorldCarousel";
 import LandscapeCarousel from "./photoSlider/LandscapeCarousel";
 import AnimalWorldCarousel from "./photoSlider/AnimalWorldCarousel";
+import DrawingCarousel from "./photoSlider/DrawingCarousel";
+import DancingCarousel from "./photoSlider/DancingCarousel";
 import PlayerGame from "./photos/Projects/PlayerGame.png";
 import DrBooBoo from "./photos/Projects/DrBooBoo.png";
 import MyIMDB from "./photos/Projects/MyIMDB.png";
@@ -82,27 +84,32 @@ class ShowOff extends Component {
                 <div><h1>Hobbies</h1>
                     <div className="cards-container">
                         <div className="slides-container">
-                            <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
-                                <CardTitle>My Photos</CardTitle>
-                                <span className="photo-span"><hr className="photo-hr" /></span>
-                                <CardTitle ><h5>Plants World</h5></CardTitle>
-                                <PlantsWorldCarousel />
-                                <span className="photo-span"><hr className="photo-hr" /></span>
-                                <CardTitle ><h5>Landscape</h5></CardTitle>
-                                <LandscapeCarousel />
-                                <span className="photo-span"><hr className="photo-hr" id="photo-hr" /></span>
-                                <CardTitle ><h5>Animal World</h5></CardTitle>
-                                <AnimalWorldCarousel />
-                            </Card>
+                            <div className="photo-slides-container">
+                                <CardTitle >My Photos</CardTitle>
+                                <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
+                                    <CardTitle ><h5>Plants World</h5></CardTitle>
+                                    <PlantsWorldCarousel />
+                                </Card>
 
+                                <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
+                                    <CardTitle ><h5>Landscape</h5></CardTitle>
+                                    <LandscapeCarousel /></Card>
+
+                                <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
+                                    <CardTitle ><h5>Animal World</h5></CardTitle>
+                                    <AnimalWorldCarousel /></Card>
+                            </div>
+                            <CardTitle >And more...</CardTitle>
                             <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
-                                <CardTitle>Drawing</CardTitle>
+                                <CardTitle>Drawing...</CardTitle>
+                                <DrawingCarousel />
                             </Card>
                             <Card shadow={5} style={{ minWidth: 'auto', margin: 'auto' }}>
                                 <CardTitle>Dancing</CardTitle>
+                                <DancingCarousel />
                             </Card>
                         </div>
-                    </div>
+                    </div >
                 </div >
             )
         } else if (this.state.activeTab === 2) {

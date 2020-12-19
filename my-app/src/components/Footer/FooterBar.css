@@ -14,3 +14,8 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffb492 !important;
 }
+.mdl-mini-footer .mdl-logo {
+  font-family: Lobster !important;
+  font-size: 18px !important;
+  color: rgb(240, 168, 218);
+}

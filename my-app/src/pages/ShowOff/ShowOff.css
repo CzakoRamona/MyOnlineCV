@@ -118,9 +118,21 @@ h5 {
   color: #55052d !important;
   font-family: Lemonada !important;
 }
+h1 {
+  text-align: center;
+  color: #55052d !important;
+  font-family: Lemonada !important;
+}
 .photo-span {
   background-color: #c06c84;
 }
-#photo-hr {
-  border: 2px doted#55052d !important;
+
+.photo-slides-container {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between !important;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 12px !important;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Resume.css";
 import me from "../../components/me.jpg";
 import Education from "./CVcomponents/education";
 import Experience from "./CVcomponents/experience";
@@ -19,14 +20,14 @@ class Resume extends Component {
                         <div className="resume-left-down">
 
                             <h4>Junior Developer</h4>
-                            <hr /*style={{ borderTop: " 3px solid rgb(24, 0, 130)", width: " 50%" }}*/ />
+                            <hr />
                             <p>
                                 Seasoned professional with over 15 years of experience in medical field.
                                 I am driven and enthusiastic about pursuing a career in IT
                         </p>
                             <hr /*style={{ borderTop: " 3px solid rgb(24, 0, 130)", width: " 90%" }}*/ />
                             <h5>Adress</h5>
-                            <p>Cluj-napoca,nr.........</p>
+                            <p>Cluj-Napoca</p>
                             <h5>Phone</h5>
                             <p>0746/xxx xxx</p>
                             <h5>Email</h5>
@@ -99,8 +100,8 @@ class Resume extends Component {
                         />
                         <Skills
                             skill="Java Script"
-                            progress={80}
-                            skillProgress="80%"
+                            progress={70}
+                            skillProgress="70%"
                         /><Skills
                             skill="React"
                             progress={80}
