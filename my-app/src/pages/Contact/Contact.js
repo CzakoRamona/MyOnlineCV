@@ -59,33 +59,31 @@ class Contact extends Component {
                     <Cell col={4}>
                         <h2>Message me</h2>
                         <div className="contact-form">
-                            <form>
-                                <Textfield
-                                    onChange={() => { }}
-                                    label="Name..."
-                                    style={{ width: '75%' }}
-                                />
+                            <form action="mailto:drvizitiuramona@gmail" method="post" enctype="text/plain">
 
-                                <Textfield
+                                <Textfield type="text" name="name" onChange={() => { }}
+                                    label="Name..."
+                                    style={{ width: '75%' }} />
+                                <Textfield type="text" name="mail"
                                     onChange={() => { }}
                                     pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
                                     error="Input is not valid!"
                                     label="Email..."
                                     style={{ width: '75%' }}
                                 />
-                                <Textfield
+                                <Textfield type="text" name="subject"
                                     onChange={() => { }}
                                     label="Subject..."
                                     style={{ width: '75%' }}
                                 />
-                                <Textfield
+                                <Textfield type="text" name="describe"
                                     onChange={() => { }}
                                     label="Describe project..."
                                     rows={2}
-                                    style={{ width: '75%' }}
-                                />
-                                <a href="mailto:drvizitiuramona@gmail" rel="noopener noreferrer" target="_blank">
-                                    <Button raised accent ripple id="button-send"> Send message</Button></a>
+                                    style={{ width: '75%' }} />
+
+                                <Button type="submit" value="Send"
+                                    raised accent ripple id="button-send">Send message</Button>
 
                             </form>
 

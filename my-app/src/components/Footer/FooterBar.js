@@ -7,7 +7,10 @@ class FooterBar extends Component {
       <Footer size="mini" className="footer">
         <FooterSection type="left" logo="My CV">
           <FooterLinkList>
-            <a href="/">Copyright &copy; 2021;Czako Ramona-Stela </a>
+            <a href="mailto:drvizitiuramona@gmail" rel="noopener noreferrer" target="_blank">
+              <i className="fa fa-envelope" aria-hidden="true" />
+            </a>
+            <a href="/">Copyright &copy; 2021 Czako Ramona-Stela </a>
           </FooterLinkList>
         </FooterSection>
       </Footer>
