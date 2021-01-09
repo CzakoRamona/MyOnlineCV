@@ -7,8 +7,7 @@ class FooterBar extends Component {
       <Footer size="mini" className="footer">
         <FooterSection type="left" logo="My CV">
           <FooterLinkList>
-            <a href="/">Help</a>
-            <a href="/">Privacy & Terms|Copyright &copy; 2020 </a>
+            <a href="/">Copyright &copy; 2021;Czako Ramona-Stela </a>
           </FooterLinkList>
         </FooterSection>
       </Footer>
