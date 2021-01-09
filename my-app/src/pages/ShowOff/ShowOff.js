@@ -58,7 +58,7 @@ class ShowOff extends Component {
 
                         </Card>
                         <Card shadow={5} style={{ width: '600px', height: "600px", margin: 'auto' }}>
-                            <CardTitle > React Project-My IMD-16.2</CardTitle>
+                            <CardTitle > React Project-My IMDB-16.2</CardTitle>
                             <div className="project-photo" >
                                 <img src={MyIMDB} alt="IMDB-like app" />
                             </div>
